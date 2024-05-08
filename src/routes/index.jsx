@@ -2,11 +2,13 @@ import Navbar from "../components/common/Navbar";
 import { Routes, Route } from "react-router-dom";
 import Home from "../pages/Home";
 import Footer from "../components/common/Footer";
+import ScrollToTop from "../components/common/ScrollToTop";
 
 const Paths = () => {
   return (
     <div className="bg-[#E2DFD0] h-screen">
       <Navbar />
+      <ScrollToTop />
 
       <Routes>
         <Route path="/" element={<Home />} />

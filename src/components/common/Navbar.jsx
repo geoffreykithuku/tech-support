@@ -39,7 +39,7 @@ const Navbar = () => {
         <ul
           className={`${
             isMobileMenuOpen
-              ? "flex flex-col justify-center items-start px-5 absolute  w-full gap-4 bg-secondary py-5 rounded top-20 sm:px-10 right-0"
+              ? "flex flex-col justify-center items-start px-5 absolute  w-full gap-4 bg-secondary-100  py-5 rounded top-20 sm:px-10 right-0"
               : "hidden md:flex  gap-4 lg:gap-10   md:justify-end items-center ml-auto w-full"
           } `}
         >

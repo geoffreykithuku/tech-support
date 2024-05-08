@@ -3,7 +3,7 @@ import { IoChevronForward } from "react-icons/io5";
 const Banner = () => {
   return (
     <div
-      className="h-[18rem] overflow-hidden text-tertiary flex justify-center items-center"
+      className="h-[20rem] overflow-hidden text-tertiary flex justify-center items-center"
       style={{
         background: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/840996/pexels-photo-840996.jpeg?auto=compress&cs=tinysrgb&w=600")`,
         backgroundSize: "cover",

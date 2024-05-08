@@ -1,4 +1,4 @@
-import React from "react";
+
 import Banner from "../components/home/Banner";
 import Main from "../components/home/Main";
 

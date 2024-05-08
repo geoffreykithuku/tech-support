@@ -2,7 +2,7 @@ import React from "react";
 import { CiMenuFries } from "react-icons/ci";
 import { IoMdClose } from "react-icons/io";
 
-import { links } from "../data/links";
+import { links } from "../../data/links";
 
 import { NavLink } from "react-router-dom";
 
@@ -26,8 +26,8 @@ const Navbar = () => {
   window.addEventListener("resize", checkWindowSize);
 
   return (
-    <nav className="bg-[#32012F] flex justify-between items-center flex-wrap md:flex-nowrap w-full h-[100px]  px-5 sm:px-10 lg:px-[100px] py-5 border-b-4 border-[#fc4100] relative  ">
-      <h1 className=" text-[#E2DFD0] w-[200px]">Tech-Support</h1>
+    <nav className="bg-secondary-100 flex justify-between items-center flex-wrap md:flex-nowrap w-full h-[100px]  px-5 sm:px-10 lg:px-[100px] py-5 border-b-4 border-primary relative  ">
+      <h1 className=" text-tertiary w-[200px]">Tech-Support</h1>
       <button className="ml-auto md:hidden" onClick={toggleMobileMenu}>
         {isMobileMenuOpen ? (
           <IoMdClose size={32} color="#FC4100" strokeWidth={1} />
@@ -39,7 +39,7 @@ const Navbar = () => {
         <ul
           className={`${
             isMobileMenuOpen
-              ? "flex flex-col justify-center items-start px-5 absolute  w-full gap-4 bg-[#32012f] py-5 rounded top-20 sm:px-10 right-0"
+              ? "flex flex-col justify-center items-start px-5 absolute  w-full gap-4 bg-secondary py-5 rounded top-20 sm:px-10 right-0"
               : "hidden md:flex  gap-4 lg:gap-10   md:justify-end items-center ml-auto w-full"
           } `}
         >
@@ -48,7 +48,9 @@ const Navbar = () => {
               <NavLink
                 onClick={() => setIsMobileMenuOpen(false)}
                 to={link.url}
-                className={`text-[#E2DFD0] hover:text-[#fc4100] ${({ isActive }) => {
+                className={`text-tertiary hover:text-primary ${({
+                  isActive,
+                }) => {
                   return isActive ? "active" : "";
                 }}`}
               >

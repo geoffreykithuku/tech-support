@@ -1,11 +1,11 @@
-import Navbar from "../components/Navbar";
+import Navbar from "../components/common/Navbar";
 import { Routes, Route } from "react-router-dom";
 import Home from "../pages/Home";
-import Footer from "../components/Footer";
+import Footer from "../components/common/Footer";
 
 const Paths = () => {
   return (
-    <div>
+    <div className="bg-[#E2DFD0] h-screen">
       <Navbar />
 
       <Routes>

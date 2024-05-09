@@ -1,11 +1,11 @@
-
+import Paths from "./routes";
 
 const App = () => {
   return (
-    <div className='text-blue-400'>
-      It works!
+    <div className="">
+      <Paths />
     </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;

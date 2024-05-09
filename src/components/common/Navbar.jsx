@@ -4,7 +4,7 @@ import { IoMdClose } from "react-icons/io";
 
 import { links } from "../../data/links";
 
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = React.useState(false);
@@ -26,8 +26,10 @@ const Navbar = () => {
   window.addEventListener("resize", checkWindowSize);
 
   return (
-    <nav className="bg-secondary-100 flex justify-between items-center flex-wrap md:flex-nowrap w-full h-[100px]  px-5 sm:px-10 lg:px-[100px] py-5 border-b-4 border-primary relative  ">
-      <h1 className=" text-tertiary w-[200px]">Tech-Support</h1>
+    <nav className="bg-secondary-100 flex justify-between items-center flex-wrap md:flex-nowrap w-full h-[100px]  px-5 sm:px-10 lg:px-[100px] py-5 border-b-2 border-primary relative  ">
+      <h1 className=" text-tertiary w-[200px]">
+        <Link to="/">Tech-Support</Link>
+      </h1>
       <button className="ml-auto md:hidden" onClick={toggleMobileMenu}>
         {isMobileMenuOpen ? (
           <IoMdClose size={32} color="#FC4100" strokeWidth={1} />

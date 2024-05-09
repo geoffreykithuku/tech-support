@@ -1,6 +1,4 @@
-
-
-import { homeServices } from "../../data/home";
+import { businessServices } from "../../data/business";
 
 const Main = () => {
   return (
@@ -14,13 +12,18 @@ const Main = () => {
       <br />
       <br />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-fit mx-auto">
-        {homeServices.map((service) => (
+      <div className=" gap-8 w-full md:w-[80%] mx-auto custom-flex grid grid-cols-1 sm:grid-cols-2">
+        {businessServices.map((service) => (
           <div
             key={service.id}
-            className="border border-primary p-4 rounded-lg flex flex-col gap-5 max-w-[370px]  hover:scale-105 transform transition-all duration-300 ease-in-out"
+            className="border border-primary p-4 rounded-lg flex flex-col gap-5   hover:scale-90 transform transition-all duration-300 ease-in-out "
           >
-            <service.icon size={42} strokeWidth={1} color="#fc4100" />
+            <service.icon
+              size={42}
+              strokeWidth={1}
+              color="#fc4100"
+             
+            />
             <h2 className=" font-semibold text-xl text-secondary-100">
               {service.title}
             </h2>

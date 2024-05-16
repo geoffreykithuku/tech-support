@@ -26,9 +26,9 @@ const Navbar = () => {
   window.addEventListener("resize", checkWindowSize);
 
   return (
-    <nav className="bg-secondary-100 flex justify-between items-center flex-wrap md:flex-nowrap w-full h-[100px]  px-5 sm:px-10 lg:px-[100px] py-5 border-b-2 border-primary relative  ">
-      <h1 className=" text-tertiary w-[200px]">
-        <Link to="/">Tech-Support</Link>
+    <nav className="bg-secondary-100 flex justify-between items-center flex-wrap md:flex-nowrap w-full h-[100px]  px-5 sm:px-10 lg:px-20 py-5 border-b-2 border-primary relative  ">
+      <h1 className=" text-tertiary w-[280px]">
+        <Link to="/"> Zetta Technologies Ltd</Link>
       </h1>
       <button className="ml-auto md:hidden" onClick={toggleMobileMenu}>
         {isMobileMenuOpen ? (

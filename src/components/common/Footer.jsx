@@ -8,7 +8,10 @@ const Footer = () => {
     <footer className="bg-secondary-200  text-tertiary   px-5 sm:px-10 md:px-20">
       <div className="w-full grid grid-cols-1 md:grid-cols-3 gap-8 py-14 justify-center items-center">
         <span className="">
-          <h2 className="border border-primary p-3 w-fit text-xl">Tech Support</h2>
+          <h2 className="border border-primary p-3 w-fit text-xl">
+            {" "}
+            Zetta Techonologies Limited
+          </h2>
           <ul className="p-3 flex flex-col gap-3">
             {links.map((link, index) => (
               <li key={index}>

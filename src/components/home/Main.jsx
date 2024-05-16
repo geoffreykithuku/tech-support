@@ -6,10 +6,10 @@ const Main = () => {
   return (
     <div className="px-5 py-20">
       <h2 className="text-center max-w-[900px] mx-auto text-lg text-gray-700">
-        Home Tech Support offers many different areas of home IT support,
-        everything you could possibly need. Below is a list of some of the tech
-        services that WHCLS is able to provide. If you need anything that isn’t
-        listed, just give us a call to discuss.
+        Zetta Techonologies Limited offers many different areas of home IT
+        support, everything you could possibly need. Below is a list of some of
+        the tech services that Zetta Techonologies Limited is able to provide.
+        If you need anything that isn’t listed, just give us a call to discuss.
       </h2>
       <br />
       <br />
